@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+<div class="row">
+  <div class="col-lg-8 col-md-10">
+      <div class="post-preview">
+              <h2 class="post-title">
+                <%= @post.name %>
+              </h2>
+              <h3 class="post-subtitle">
+                  <%= @post.description %>
+              </h3>
+          </a>
+            <p class="post-meta">Posted by <a href="#">Mason Moore</a> on <%= @post.date %></p>
+      </div>
+  </div>
+</div>
+</div>
+<hr>
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

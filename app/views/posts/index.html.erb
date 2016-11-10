@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10">
+      <h1>Listing Posts</h1>
+    </div>
+  </div>
+</div>
+
+    <% @posts.each do |post| %>
+      <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10">
+            <div class="post-preview">
+                    <h2 class="post-title">
+                      <%= link_to post.name, post_path(post) %>
+                    </h2>
+                    <h3 class="post-subtitle">
+                        <%= post.description %>
+                    </h3>
+                </a>
+                  <p class="post-meta">Posted by <a href="#">Mason Moore</a> on <%= post.date %></p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+    <% end %>
+
+<br>
+<%= link_to 'New Post', new_post_path %>
+</br>
