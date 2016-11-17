@@ -8,6 +8,8 @@ Rails.application.routes.draw do
    root 'posts#index'
    get 'about' => 'dashboard#about'
    get 'contact' => 'dashboard#contact'
+   get 'profile' => 'dashboard#profile'
+  post 'profile' => 'dashboard#update_profile'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

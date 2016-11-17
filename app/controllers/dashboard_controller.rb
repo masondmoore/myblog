@@ -3,4 +3,9 @@ class DashboardController < ApplicationController
   end
   def contact
   end
+  def profile
+  end
+  def update_profile
+    
+  end
 end

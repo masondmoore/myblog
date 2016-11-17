@@ -1,0 +1,16 @@
+
+<%= form_tag profile_path do %>
+<h4> First Name:</h4>
+<%= text_field_tag "first_name" %>
+<br>
+<h4> Last Name:</h4>
+<%= text_field_tag "last_name"%>
+<br>
+<h4> Email:</h4>
+<%= text_field_tag "email" %>
+<br>
+<h4> Password:</h4>
+<%= text_field_tag "password" %>
+<br>
+<%= submit_tag "Update" %>
+<% end %>
