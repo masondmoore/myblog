@@ -7,7 +7,7 @@
                 <%= @post.name %>
               </h2>
               <h3 class="post-subtitle">
-                  <%= @post.description %>
+                  <%= @post.description.html_safe %>
               </h3>
           </a>
             <p class="post-meta">Posted by <a href="#">Mason Moore</a> on <%= @post.date %></p>

@@ -15,7 +15,7 @@
                       <%= link_to post.name, post_path(post) %>
                     </h2>
                     <h3 class="post-subtitle">
-                        <%= post.description %>
+                        <%= post.description.html_safe %>
                     </h3>
                 </a>
                   <p class="post-meta">Posted by <a href=""> <%= post.user.full_name %></a> on <%= post.date %></p>
