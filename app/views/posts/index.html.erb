@@ -18,7 +18,7 @@
                         <%= post.description.html_safe %>
                     </h3>
                 </a>
-                  <p class="post-meta">Posted by <a href=""> <%= post.user.full_name %></a> on <%= post.date %></p>
+                  <p class="post-meta">Posted by <a href=""> <%= post.user.full_name %></a> on <%= post.date %> <%= social_share_button_tag("twitter") %> </p>
             </div>
         </div>
     </div>

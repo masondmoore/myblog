@@ -39,7 +39,10 @@
                           <%= link_to 'About', about_path %>
                       </li>
                       <li>
-                          <%= link_to 'Profile', profile_path %>
+                        <%if user_signed_in? %>
+
+                              <%= link_to 'Profile', profile_path %>
+                              <% end %>
                       </li>
                       <li>
                           <%= link_to 'Contact', contact_path %>
@@ -51,7 +54,7 @@
                       <% else %>
                         <li>
                         <%= link_to('Login', new_user_session_path)  %>
-                        </li>
+                        <li>
                       <% end %>
                   </ul>
               </div>
@@ -67,9 +70,9 @@
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                       <div class="site-heading">
-                          <h1>Mason's Blog</h1>
+                          <h1>A Day with Ma</h1>
                           <hr class="small">
-                          <span class="subheading">Mason's Blog Theme by Start Bootstrap</span>
+                          <span class="subheading">Daily life of Mason</span>
                       </div>
                   </div>
               </div>
@@ -109,7 +112,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                <p class="copyright text-muted">Copyright &copy; Mason Moore 2016</p>
             </div>
         </div>
     </div>

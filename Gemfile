@@ -58,3 +58,5 @@ gem 'devise'
 gem 'rails_12factor', group: :production
 
 gem 'pry'
+
+gem 'social-share-button', '~> 0.1.6'
